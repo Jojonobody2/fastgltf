@@ -1,6 +1,7 @@
 project "fastgltf"
 	kind "StaticLib"
 	language "C++"
+	cppdialect "C++17"
 	staticruntime "off"
 
 	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
@@ -13,7 +14,8 @@ project "fastgltf"
 
 	includedirs
 	{
-		"include"
+		"include",
+		"%{wks.location}/Engine/ThirdParty/simdjson/singleheader"
 	}
 
 	filter "system:linux"
