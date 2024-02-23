@@ -43,6 +43,8 @@
 #pragma warning(push)
 #pragma warning(disable : 5030) // attribute 'x' is not recognized
 #pragma warning(disable : 4514) // unreferenced inline function has been removed
+#pragma warning(disable : 4018)
+#pragma warning(disable : 4267)
 #endif
 
 #include <simdjson.h>
